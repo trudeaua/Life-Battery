@@ -28,7 +28,8 @@ plugins/android.json
 plugins/ios.json
 www/
 $RECYCLE.BIN/
-
+my-release-key.keystore
+LifeBattery.apk
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
