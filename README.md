@@ -6,4 +6,5 @@ Code for the hybrid app Life Battery.
 2. Clone this repository
 3. `cd` to the cloned repo, and run the command `npm install` to install project dependencies
 4. Test the app in the browser with `ionic serve`
-5. If Ionic can't find some of the node modules, install them with `npm install <MODULE_NAME>`
+
+**If Ionic can't find some of the node modules, install them with `npm install <MODULE_NAME>`*
