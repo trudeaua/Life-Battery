@@ -1,0 +1,27 @@
+<ion-content padding class="background-styles" text-center>
+  <ion-title style="padding-top: 20%">Welcome To Life Battery</ion-title>
+  <br>
+  <p class="welcome-message">This app will let you know how much "battery" your life has left.</p>
+  <br><br>
+  <p class="welcome-message">Please enter your birthday and country:</p>
+  <ion-card>
+    <ion-item>
+      <ion-label>Birthday</ion-label>
+      <ion-datetime text-right max="{{currentDate}}" min="1900-01-01" placeholder="Enter Your Birthday" class="welcome-input-field"
+        displayFormat="MM/DD/YYYY" [(ngModel)]="userBirthday"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select [(ngModel)]="userGender" placeholder="Your Gender">
+        <ion-option *ngFor="let gender of genders" value="{{gender.value}}">{{gender.gender}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Country</ion-label>
+      <ion-select [(ngModel)]="selectedCountryId" placeholder="Your Country">
+        <ion-option *ngFor="let country of allCountries" value="{{country.id}}">{{country.country}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <button ion-button id="welcome-submit-btn" block clear large color="danger" (click)="saveInfo()">Submit</button>
+</ion-content>

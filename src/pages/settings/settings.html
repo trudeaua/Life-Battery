@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-item>
+      <ion-label>Birthday</ion-label>
+      <ion-datetime text-right placeholder="Enter Your Birthday" max="{{currentDate}}" min="1900-01-01" class="welcome-input-field"
+        displayFormat="MM/DD/YYYY" [(ngModel)]="userBirthday"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select [(ngModel)]="userGender" placeholder="Your Gender">
+        <ion-option *ngFor="let gender of genders" [selected]="userGender == gender.value" value="{{gender.value}}">{{gender.gender}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Country</ion-label>
+      <ion-select [(ngModel)]="selectedCountryId">
+        <ion-option *ngFor="let country of allCountries" [selected]="country.id == selectedCountryId" value="{{country.id}}">{{country.country}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <button ion-button id="welcome-submit-btn" block clear large color="danger" (click)="saveSettings()">Done</button>
+</ion-content>

@@ -1,26 +1,9 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+Code for the hybrid app Life Battery.
 
-## How to use this template
+## Installation
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+1. Have [Node.js](https://nodejs.org/en/download/) and [Ionic 2](https://ionicframework.com/docs/intro/installation/) on your computer
+2. Clone this repository
+3. `cd` to the cloned repo, and run the command `npm install` to install project dependencies
+4. Test the app in the browser with `ionic serve`
+5. If Ionic can't find some of the node modules, install them with `npm install <MODULE_NAME>`

@@ -1,14 +1,19 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding-left padding-right class="background-styles">
+  <div [style.visibility]="enableBatteryVisibility ? 'visible' : 'hidden'" text-center id="battery-icon-container">
+    <div text-left>
+      <button ion-button icon-only clear large color="danger" (click)="changeSettings()">
+        <ion-icon name="settings"></ion-icon>
+      </button>
+    </div>
+    <br>
+    <!--img id="battery-icon" src="../../assets/icon/battery-outline.ico" alt="battery">
+    <div- id="battery-status"></div-->
+    <br>
+    <div id="battery-tip"></div>
+    <div id="battery">
+      <div text-center style="color: white; " id="percentage-remaining"></div>
+      <div id="battery-status"></div>
+    </div>
+    <div text-center style="color: #e2e2e2" id="years-remaining"></div>
+  </div>
 </ion-content>

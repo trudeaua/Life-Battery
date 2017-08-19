@@ -1,0 +1,12 @@
+.welcome-message {
+    color: map-get($colors, danger);
+    font-size: 17px;
+}
+
+#welcome-submit-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;;
+    margin: 0 auto;
+}
